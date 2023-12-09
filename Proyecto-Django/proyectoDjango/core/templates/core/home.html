@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Veterinaria Woof and Whiskers{% endblock %}
+
+{% block headers %}
+<h1>Woof and Whiskers</h1>
+<span class="subheading">Clinica Veterinaria</span>
+{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/terrierEnfermero.webp' %}{% endblock %}
+
+{% block content %}
+  <!-- Contenido Principal -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p class="mb-4">En Woof and Whiskers, nos dedicamos a cuidar a tus seres queridos de cuatro patas con pasión y profesionalismo. Nuestro compromiso es proporcionar la más alta calidad de atención veterinaria, enfocándonos en la salud y felicidad de tus mascotas.</p>
+
+        <div class="shadow p-4 mb-5 bg-white rounded">
+          <h2 class="section-heading">Nuestros Servicios</h2>
+          <p class="mb-4">Ofrecemos una variedad de servicios veterinarios, desde chequeos de rutina hasta cirugías especializadas. Nuestro equipo está aquí para satisfacer todas las necesidades de salud de tus mascotas.</p>
+          <a class="btn btn-primary" href="{% url 'portfolio' %}">Conoce más sobre nuestros servicios</a>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="shadow p-4 mb-5 bg-white rounded">
+              <h2 class="section-heading">Conócenos</h2>
+              <p class="mb-4">Descubre quiénes somos y nuestro compromiso con el bienestar animal. Conoce a nuestro equipo de veterinarios apasionados y con experiencia.</p>
+              <a class="btn btn-primary" href="{% url 'about' %}">Sobre Nosotros</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="shadow p-4 mb-5 bg-white rounded">
+              <h2 class="section-heading">Contáctanos</h2>
+              <p class="mb-4">¿Tienes alguna pregunta o necesitas programar una cita para tu mascota? No dudes en contactarnos. Estamos aquí para ayudarte.</p>
+              <a class="btn btn-primary" href="{% url 'contact' %}">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  <!-- Aside con Imágenes -->
+  <aside class="col-lg-4 col-md-2">
+    <div class="shadow p-4 mb-5 bg-white rounded">
+      <h2 class="section-heading">Siempre en alerta</h2>
+      <div class="mb-3">
+        <img src="{% static 'core/img/acercade.webp' %}" alt="Imagen 1" class="img-fluid">
+      </div>
+      <div class="mb-3">
+        <img src="{% static 'core/img/cirugia.jpeg' %}" alt="Imagen 2" class="img-fluid">
+      </div>
+      <div>
+        <img src="{% static 'core/img/servicios.webp' %}" alt="Imagen 3" class="img-fluid">
+      </div>
+    </div>
+  </aside>
+</div>
+</div>
+
+{% endblock %}

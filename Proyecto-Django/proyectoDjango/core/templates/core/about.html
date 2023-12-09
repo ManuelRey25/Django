@@ -1,0 +1,67 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Nuestros Veterinarios {% endblock %}
+
+{% block headers %}
+  <h1>Nuestros veterinarios</h1>
+  <span class="subheading">Conoce a los mejores veterinarios</span>
+{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/atencion medica.jpg' %}{% endblock %}
+
+{% block content %}
+  <!-- Contenido Principal -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar3.jpeg' %}" alt="Manu">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Dr. Manu</h2>
+        <p>Nacido en Buenos Aires, el Dr. Manu es un apasionado veterinario con más de 15 años de experiencia. Su enfoque compasivo y su habilidad para tranquilizar a las mascotas lo han convertido en un favorito entre nuestros clientes.</p>
+        <p>Manu se especializa en cirugía veterinaria y siempre busca las mejores soluciones para mantener la salud y la felicidad de los animales.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar2.jpeg' %}" alt="Ernesto">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Dr. Ernesto</h2>
+        <p>Nacido en Córdoba, el Dr. Ernesto se especializa en medicina preventiva y cuidado geriátrico para mascotas. Su empatía y atención personalizada hacen que los dueños de mascotas confíen en él para el bienestar a largo plazo de sus amigos peludos.</p>
+        <p>Ernesto se dedica a educar a los propietarios sobre el cuidado óptimo de sus mascotas y está comprometido con el bienestar de cada paciente que trata.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpeg' %}" alt="Caro">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Dra. Caro</h2>
+        <p>Nacida en Mendoza, la Dra. Caro es una veterinaria apasionada por el bienestar de los animales. Con experiencia en medicina interna, Caro se esfuerza por proporcionar diagnósticos precisos y tratamientos efectivos para garantizar la salud continua de las mascotas.</p>
+        <p>Caro tiene un enfoque holístico para la atención veterinaria y trabaja estrechamente con los dueños de mascotas para crear planes de cuidado personalizados.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar4.jpeg' %}" alt="Mayra Perez">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Dra. Mayra</h2>
+        <p>Nacida en Rosario, la Dra. Mayra es una veterinaria dedicada con una pasión por la atención de emergencia y cuidado intensivo. Su experiencia en situaciones críticas la convierte en un recurso valioso para casos que requieren atención inmediata y cuidado especializado.</p>
+        <p>Mayra se compromete a brindar el más alto nivel de atención médica a las mascotas, asegurando su recuperación y bienestar. Su enfoque compasivo y su habilidad para tranquilizar a los animales la convierten en una figura de confianza para los dueños de mascotas que buscan atención de calidad.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+{% endblock %}
