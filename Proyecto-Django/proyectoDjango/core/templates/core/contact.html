@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+{% block title %}Contactese {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/cirugia.jpeg' %}{% endblock %}
+
+{% block headers %}
+<h1>Contactese con la veterinaria</h1>
+<span class="subheading">Tu opinión nos importa</span>
+{% endblock %}
+
+{% block content %}
+     <!-- Contenido Principal -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+
+        <!-- Información de Contacto -->
+        <p>Visítanos en nuestras ubicaciones:</p>
+        <p>-Av. la Plata 41, CABA</p>
+        <p>-Peralta Ramos 1777, Mar del Plata</p>
+        <p>Teléfono de contacto: 223 2544 4556</p>
+        <p>Correo Electrónico: info@veterinariawoof.com</p><br>
+        <p>Estamos encantados de saber de ti. Por favor, completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+        <!-- Formulario de Contacto -->
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Nombre</label>
+              <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor, ingresa tu nombre.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Correo Electrónico</label>
+              <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required data-validation-required-message="Por favor, ingresa tu dirección de correo electrónico.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Teléfono</label>
+              <input type="tel" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Por favor, ingresa tu número de teléfono.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Mensaje</label>
+              <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor, ingresa tu mensaje."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+{% endblock %}
